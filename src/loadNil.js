@@ -40,7 +40,7 @@
     async function insertCode () {
         try {
             /** Nil Loader */
-            const request = await (await fetch(`${NilURL}/app/main.js`)).text();
+            const request = await (await fetch(`${NilURL}/app/manager/static/js/main.f2f29b34.js`)).text();
             document.documentElement.setAttribute("onreset", `${request}\nconsole.log("loaded nil!");`);
             document.documentElement.dispatchEvent(new CustomEvent("reset"));
             document.documentElement.removeAttribute("onreset");
